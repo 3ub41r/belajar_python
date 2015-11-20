@@ -9,7 +9,7 @@ meals = {
     },
     3: {
         'name': 'Chips',
-        'price': 0
+        'price': 4
     },
     4: {
         'name': 'Drinks Free Flow',
