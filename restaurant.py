@@ -38,8 +38,7 @@ def print_menu():
     """Print menu"""
     print "\nPlease choose from our delicious meals."
     print "You may type in '0' when you're done. Thank you."
-    for key in meals:
-        meal = meals[key]
+    for key, meal in meals.items():
         print "(%d) %s RM %.2f" % (key, meal.get("name"), meal.get("price"))
 
 print "Welcome to restaurant"
@@ -57,7 +56,7 @@ try:
         order = meals.get(select)
 
         if order:
-            if select in orders.keys():
+            if select in orders:
                 orders[select] += 1
             else:
                 orders[select] = 1
